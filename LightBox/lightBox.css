@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: rgba(142, 218, 218, 0.425);
+}
+.content{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+}
+.imgContent{
+    width: 95%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+/* ---------- LIGHT BOX --------------- */
+.lightBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    cursor: zoom-out;
+}
+.boxContent{
+    max-height: 350px;
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+    /* object-fit: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: auto;
+}
+.boxContent img{
+    margin: 0 20px;
+    max-height: 400px;
+    min-width: 50%;
+    object-fit: cover;
+}
+
+.nextCheck, .preCheck{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
