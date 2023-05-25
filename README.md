@@ -1,5 +1,5 @@
 # Project for Learn Javascript
-[Picture](https://drive.google.com/file/d/1zChk_vNLFFNLteDgzxJH_wQ6esbEXXaa/view?usp=sharing)
+<img src="https://drive.google.com/file/d/1zChk_vNLFFNLteDgzxJH_wQ6esbEXXaa/view?usp=sharing">
 ## Something about the project
 ```
 - Synthesize projects from small to large, simple to complex, for the purpose 
