@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, *, *::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgb(21, 21, 196), rgb(131, 61, 148));
+}
+
+.todoList{
+    max-width: 600px;
+    /* height: 200px; */
+    margin: 150px auto;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(107, 98, 160, 0.15) 0px 48px 100px 0px;
+}
+.headerList, .createList{
+    margin: 10px 5px;
+    width: 50%;
+}
+.headerList{
+    padding: 6px;
+    border-bottom: 2px solid rgb(192, 187, 187);
+}
+.headerList p{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.icon{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: center;
+    align-items: center;
+}
+.createList{
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+}
+.textlist{
+    /* display: inline-block; */
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 23px;
+    background-color: rgba(221, 217, 217, 0.836);
+    outline: none;
+    font-size: 17px;
+}
+.buttonlist{
+    height: 43.64px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 30%;
+    display: inline-block;
+    border-radius: 23px;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    outline: none;
+}
+.buttonlist:hover{
+    background-color: #6c6063;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    /* ! --> user-select: không chọn bôi đen được element */
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    background-color: #c2b7b7;
+}
+ul li:nth-child(odd){
+    background-color: #f2efef;
+}
+ul li.checked{
+    background-color: #888;
+    color: #fff; 
+    /* ? trắng: #fff */
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 16px;
+    width: 7px;
+}
+ul li:hover{
+    background-color: rgb(87, 147, 49);
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    /* font-size: 20px; */
+}
+.close:hover{
+    background-color: #f44336;
+    color: white;
+}
